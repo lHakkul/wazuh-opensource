@@ -20,6 +20,25 @@ Dashboard SOC para monitorear en tiempo real el estado de salud del ecosistema W
 - **Configuración por `.env`** — sin credenciales hardcodeadas
 - **Docker-ready** — despliegue con `docker compose up`
 
+<img width="1603" height="926" alt="imagen" src="https://github.com/user-attachments/assets/2f68630e-c934-488d-982d-eb1f8b24adc6" />
+<img width="1590" height="746" alt="imagen" src="https://github.com/user-attachments/assets/d0a393e8-94bb-49e6-961a-7427f89aa835" />
+
+
+---
+<img width="1629" height="503" alt="imagen" src="https://github.com/user-attachments/assets/be1a4e99-1ee5-44d8-96a2-2178f4719d99" />
+
+
+---
+
+<img width="1603" height="609" alt="imagen" src="https://github.com/user-attachments/assets/2e638c6e-959b-4e72-be84-6ceba0ed0907" />
+
+
+---
+<img width="531" height="426" alt="imagen" src="https://github.com/user-attachments/assets/8590ffd6-2e55-4e4e-86ce-a089a5a564d1" />
+
+
+
+
 ---
 
 ## Requisitos
