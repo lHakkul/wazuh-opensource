@@ -1,4 +1,4 @@
-# Wazuh Health Monitor
+# Wazuh Pulse Monitor
 
 Dashboard SOC para monitorear en tiempo real el estado de salud del ecosistema Wazuh: managers, indexers, agentes conectados/desconectados, estado del clúster, historial de eventos y alertas por Telegram y Slack.
 
@@ -34,8 +34,8 @@ Dashboard SOC para monitorear en tiempo real el estado de salud del ecosistema W
 
 ```bash
 # 1. Clona el repositorio
-git clone https://github.com/TU_USUARIO/wazuh-health-monitor.git
-cd wazuh-health-monitor
+git clone https://github.com/TU_USUARIO/wazuh-pulse-monitor.git
+cd wazuh-pulse-monitor
 
 # 2. Copia y edita la configuración
 cp .env.example .env
@@ -109,7 +109,7 @@ npm run dev
 ## Estructura del proyecto
 
 ```
-wazuh-health-monitor/
+wazuh-pulse-monitor/
 ├── backend/
 │   ├── app/
 │   │   ├── main.py             # Entrada FastAPI + lifespan
@@ -169,14 +169,14 @@ wazuh-health-monitor/
 # Inicializar el repositorio
 git init
 git add .
-git commit -m "feat: initial release — Wazuh Health Monitor v1.0"
+git commit -m "feat: initial release — Wazuh Pulse Monitor v1.0"
 
 # Crear el repo en GitHub (requiere gh CLI)
-gh repo create wazuh-health-monitor --public --description "Dashboard SOC para monitorear el ecosistema Wazuh"
+gh repo create wazuh-pulse-monitor --public --description "Dashboard SOC para monitorear el ecosistema Wazuh"
 
 # Subir el código
 git branch -M main
-git remote add origin https://github.com/TU_USUARIO/wazuh-health-monitor.git
+git remote add origin https://github.com/TU_USUARIO/wazuh-pulse-monitor.git
 git push -u origin main
 ```
 

@@ -1,5 +1,5 @@
 {
-  "name": "wazuh-health-monitor",
+  "name": "wazuh-pulse-monitor",
   "version": "1.0.0",
   "private": true,
   "type": "module",

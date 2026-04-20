@@ -11,7 +11,7 @@ export function Navbar({ lastUpdated, onRefresh, loading, connected }) {
           </div>
           <div>
             <span className="font-semibold text-white text-sm">Wazuh</span>
-            <span className="text-brand-400 font-semibold text-sm"> Health Monitor</span>
+            <span className="text-brand-400 font-semibold text-sm"> Pulse Monitor</span>
           </div>
         </div>
 

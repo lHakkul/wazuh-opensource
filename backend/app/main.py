@@ -35,7 +35,7 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="Wazuh Health Monitor",
+    title="Wazuh Pulse Monitor",
     description="API para monitorear el estado del ecosistema Wazuh",
     version="1.0.0",
     lifespan=lifespan,
@@ -61,4 +61,4 @@ app.include_router(alerts.router)
 
 @app.get("/health")
 async def health():
-    return {"status": "ok", "service": "wazuh-health-monitor"}
+    return {"status": "ok", "service": "wazuh-pulse-monitor"}
