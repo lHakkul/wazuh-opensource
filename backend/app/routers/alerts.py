@@ -18,7 +18,7 @@ async def get_alert_config():
 async def test_telegram():
     if not settings.TELEGRAM_BOT_TOKEN:
         raise HTTPException(status_code=400, detail="Telegram no configurado")
-    await alerts.send_telegram("✅ <b>Wazuh Monitor</b>\nPrueba de notificación Telegram exitosa.")
+    await alerts.send_telegram("✅ <b>Wazuh Pulse Monitor</b>\nPrueba de notificación Telegram exitosa.")
     return {"message": "Notificación enviada"}
 
 
@@ -26,5 +26,5 @@ async def test_telegram():
 async def test_slack():
     if not settings.SLACK_WEBHOOK_URL:
         raise HTTPException(status_code=400, detail="Slack no configurado")
-    await alerts.send_slack("✅ *Wazuh Monitor*\nPrueba de notificación Slack exitosa.")
+    await alerts.send_slack("✅ *Wazuh Pulse Monitor*\nPrueba de notificación Slack exitosa.")
     return {"message": "Notificación enviada"}

@@ -48,8 +48,8 @@ async def _maybe_notify(component: str, status: HealthStatus, message: str):
     else:
         return
 
-    tg_text = f"{icon} <b>Wazuh Monitor — {component}</b>\nEstado: <b>{status.upper()}</b>\n{message}"
-    sl_text = f"{icon} *Wazuh Monitor — {component}*\nEstado: *{status.upper()}*\n{message}"
+    tg_text = f"{icon} <b>Wazuh Pulse Monitor - {component}</b>\nEstado: <b>{status.upper()}</b>\n{message}"
+    sl_text = f"{icon} *Wazuh Pulse Monitor - {component}*\nEstado: *{status.upper()}*\n{message}"
     await send_telegram(tg_text)
     await send_slack(sl_text)
 
@@ -80,8 +80,8 @@ async def check_and_notify(overview: dict):
     if disconnected != prev_dc and disconnected > 0:
         _previous_states["_agents_disconnected"] = disconnected
         msg = f"{disconnected} agente(s) desconectado(s) detectados"
-        await send_telegram(f"⚠️ <b>Wazuh Monitor — Agentes</b>\n{msg}")
-        await send_slack(f"⚠️ *Wazuh Monitor — Agentes*\n{msg}")
+        await send_telegram(f"⚠️ <b>Wazuh Pulse Monitor - Agentes</b>\n{msg}")
+        await send_slack(f"⚠️ *Wazuh Pulse Monitor - Agentes*\n{msg}")
         hist.add_event("agents_disconnected", HealthStatus.YELLOW, "agents", msg,
                        details={"disconnected": disconnected})
     elif disconnected == 0 and prev_dc > 0:

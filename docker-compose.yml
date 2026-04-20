@@ -5,13 +5,13 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: wazuh-monitor-backend
+    container_name: wazuh-pulse-backend
     restart: unless-stopped
     env_file: .env
     ports:
       - "8000:8000"
     networks:
-      - wazuh-monitor
+      - wazuh-pulse
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
       interval: 30s
@@ -22,15 +22,15 @@ services:
     build:
       context: ./frontend
       dockerfile: Dockerfile
-    container_name: wazuh-monitor-frontend
+    container_name: wazuh-pulse-frontend
     restart: unless-stopped
     ports:
       - "3000:80"
     depends_on:
       - backend
     networks:
-      - wazuh-monitor
+      - wazuh-pulse
 
 networks:
-  wazuh-monitor:
+  wazuh-pulse:
     driver: bridge
